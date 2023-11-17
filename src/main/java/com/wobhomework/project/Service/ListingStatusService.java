@@ -17,15 +17,7 @@ public class ListingStatusService {
     private final ServiceUtil serviceUtil;
     private final ListingStatusRepository listingStatusRepository;
 
-    private final String uri = "https://my.api.mockaroo.com/listingStatus?key=63304c70";
-
-
     public List<ListingStatus> getAllListingStatus() {
-        ListingStatus[] listingStatuses = (ListingStatus[]) serviceUtil.restCall(uri, new ListingStatus[]{});
-        Arrays
-                .stream(listingStatuses)
-                .forEach(listingStatusRepository::save);
-
         return listingStatusRepository.findAll();
     }
 

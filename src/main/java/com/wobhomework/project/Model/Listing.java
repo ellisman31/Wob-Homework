@@ -22,26 +22,16 @@ public class Listing {
 
     @Id
     private UUID id;
-
     private String title;
-
     private String description;
-
     private UUID location_id;
-
     private BigDecimal listing_price;
-
     private String currency;
-
     private int quantity;
-
     private int listing_status;
-
     private int marketplace;
-
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM/dd/yyyy")
     private Date upload_time;
-
     private String owner_email_address;
 
 }

@@ -19,15 +19,7 @@ public class LocationService {
     private final ServiceUtil serviceUtil;
     private final LocationRepository locationRepository;
 
-    private final String uri = "https://my.api.mockaroo.com/location?key=63304c70";
-
-
     public List<Location> getAllLocation() {
-        Location[] locations = (Location[]) serviceUtil.restCall(uri, new Location[]{});
-        Arrays
-                .stream(locations)
-                .forEach(locationRepository::save);
-
         return locationRepository.findAll();
     }
 
