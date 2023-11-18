@@ -1,7 +1,6 @@
 package com.wobhomework.project.Util;
 
 import com.wobhomework.project.Model.Listing;
-import com.wobhomework.project.Model.Marketplace;
 import com.wobhomework.project.Repository.ListingRepository;
 import com.wobhomework.project.Repository.MarketplaceRepository;
 import lombok.RequiredArgsConstructor;
@@ -12,7 +11,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @Component
