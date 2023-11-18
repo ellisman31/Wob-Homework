@@ -28,7 +28,6 @@ public class DataLoader implements ApplicationRunner {
     private final LocationRepository locationRepository;
     private final ConvertDataIntoCSVFile convertDataIntoCSVFile;
 
-
     public void run(ApplicationArguments args) throws IOException {
         dataInitialize(listingStatusRepository,listingStatusUri, new ListingStatus[]{});
         dataInitialize(marketplaceRepository,marketplaceUri, new Marketplace[]{});
