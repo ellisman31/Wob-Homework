@@ -15,7 +15,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class LocationService {
 
-
     private final ServiceUtil serviceUtil;
     private final LocationRepository locationRepository;
 

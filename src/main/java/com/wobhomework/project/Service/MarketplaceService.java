@@ -16,7 +16,6 @@ public class MarketplaceService {
     private final ServiceUtil serviceUtil;
     private final MarketplaceRepository marketplaceRepository;
 
-
     public List<Marketplace> getAllMarketplace() {
         return marketplaceRepository.findAll();
     }
