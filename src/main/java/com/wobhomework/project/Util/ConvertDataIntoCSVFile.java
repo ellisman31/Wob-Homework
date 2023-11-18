@@ -22,7 +22,6 @@ public class ConvertDataIntoCSVFile {
     private final ListingRepository listingRepository;
     private final MarketplaceRepository marketplaceRepository;
 
-
     public void convertGivenDataToCSVForListing() throws IOException {
         List<Listing> listings = listingRepository.findAll();
         List<String[]> csvData = createCsvDataForListing(listings);
