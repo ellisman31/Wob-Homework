@@ -29,10 +29,13 @@ public class DataLoader implements ApplicationRunner {
     private final ConvertDataIntoCSVFile convertDataIntoCSVFile;
 
     public void run(ApplicationArguments args) throws IOException {
-        dataInitialize(listingStatusRepository,listingStatusUri, new ListingStatus[]{});
-        dataInitialize(marketplaceRepository,marketplaceUri, new Marketplace[]{});
-        dataInitialize(locationRepository,locationUri, new Location[]{});
-        dataInitialize(listingRepository,listingUri, new Listing[]{});
+        if (listingRepository.findAll().isEmpty() && listingStatusRepository.findAll().isEmpty() &&
+        marketplaceRepository.findAll().isEmpty() && locationRepository.findAll().isEmpty()) {
+            dataInitialize(listingStatusRepository,listingStatusUri, new ListingStatus[]{});
+            dataInitialize(marketplaceRepository,marketplaceUri, new Marketplace[]{});
+            dataInitialize(locationRepository,locationUri, new Location[]{});
+            dataInitialize(listingRepository,listingUri, new Listing[]{});
+        }
         convertDataIntoCSVFile.convertGivenDataToCSVForListing();
     }
 

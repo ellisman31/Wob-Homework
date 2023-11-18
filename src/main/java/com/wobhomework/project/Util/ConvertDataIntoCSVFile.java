@@ -53,7 +53,9 @@ public class ConvertDataIntoCSVFile {
         List<String> importLogBodyList = new ArrayList<>();
         listings.forEach(listing -> {
             importLogBodyListValidation(listing, importLogBodyList);
-            list.add(importLogBodyList.toArray(String[]::new));
+            if (importLogBodyList.size() == header.length) {
+                list.add(importLogBodyList.toArray(String[]::new));
+            }
             importLogBodyList.clear();
         });
 
@@ -97,7 +99,7 @@ public class ConvertDataIntoCSVFile {
             else if (listingRepository.findOwnerEmailAddressByListingId(listingId) == null) {
                 importLogBodyList.add("owner_email_address");
             }
-            else if (listingRepository.findLocationIdByListingId(listingId) == 0) {
+            else if (listingRepository.findLocationIdByListingId(listingId) == null) {
                 importLogBodyList.add("location_id");
             }
             else if (listingRepository.findListingStatusByListingId(listingId) == 0) {
