@@ -16,15 +16,7 @@ public class MarketplaceService {
     private final ServiceUtil serviceUtil;
     private final MarketplaceRepository marketplaceRepository;
 
-    private final String uri = "https://my.api.mockaroo.com/marketplace?key=63304c70";
-
-
     public List<Marketplace> getAllMarketplace() {
-        Marketplace[] marketplaces = (Marketplace[]) serviceUtil.restCall(uri, new Marketplace[]{});
-        Arrays
-                .stream(marketplaces)
-                .forEach(marketplaceRepository::save);
-
         return marketplaceRepository.findAll();
     }
 }
