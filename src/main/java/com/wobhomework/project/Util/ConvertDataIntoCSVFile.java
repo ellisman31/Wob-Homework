@@ -3,6 +3,7 @@ package com.wobhomework.project.Util;
 import com.wobhomework.project.Model.Listing;
 import com.wobhomework.project.Model.Marketplace;
 import com.wobhomework.project.Repository.ListingRepository;
+import com.wobhomework.project.Repository.MarketplaceRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -21,6 +22,7 @@ public class ConvertDataIntoCSVFile {
     private static final String CSV_FILE_NAME = "importLog";
     private static final String CSV_EXTENSION = ".csv";
     private final ListingRepository listingRepository;
+    private final MarketplaceRepository marketplaceRepository;
 
 
     public void convertGivenDataToCSVForListing() throws IOException {
@@ -68,10 +70,12 @@ public class ConvertDataIntoCSVFile {
 
             if (listingRepository.findMarketplaceByListingId(listingId) != 0) {
                 int marketplaceId = listingRepository.findMarketplaceByListingId(listingId);
-               String marketplaceName = listingRepository.findMarketplaceNameByMarketplaceIdForListingId(listingId, marketplaceId);
-                importLogBodyList.add(marketplaceName);
+                if (marketplaceRepository.findById(marketplaceId).isPresent()) {
+                    String marketplaceName = marketplaceRepository.findById(marketplaceId).get().getMarketplace_name();
+                    importLogBodyList.add(marketplaceName);
+                }
             } else {
-                importLogBodyList.add("null");
+                importLogBodyList.add("");
                 importLogBodyList.add("marketplace");
             }
 
@@ -103,9 +107,9 @@ public class ConvertDataIntoCSVFile {
                 importLogBodyList.add("listing_status");
             }
         } else {
-            importLogBodyList.add("null");
-            importLogBodyList.add("null");
-            importLogBodyList.add("null");
+            importLogBodyList.add("");
+            importLogBodyList.add("");
+            importLogBodyList.add("");
         }
     }
 
