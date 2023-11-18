@@ -1,0 +1,146 @@
+{
+	"totalListingCount": 1000,
+	"totalEbayListingCount": 505,
+	"totalEbayListingPrice": 224041.95,
+	"averageEbayListingPrice": 443.65,
+	"totalAmazonListingCount": 495,
+	"totalAmazonListingPrice": 219838.39,
+	"bestListerEmailAddress": "",
+	"monthlyReports": {
+		"2018": [
+			{
+			"january": [
+				{
+					"totalEbayListingCountPerMonth": 14,
+					"totalEbayListingPricePerMonth": 5160.15,
+					"averageEbayListingPricePerMonth": 368.58,
+					"averageEbayListingCountPerMonth": 0,
+					"totalAmazonListingCountPerMonth": 20,
+					"totalAmazonListingPricePerMonth": 8494.48,
+					"bestListerEmailAddressOfTheMonth": ""
+				}
+			],
+			"february": [
+				{
+					"totalEbayListingCountPerMonth": 14,
+					"totalEbayListingPricePerMonth": 5377.65,
+					"averageEbayListingPricePerMonth": 384.12,
+					"averageEbayListingCountPerMonth": 0,
+					"totalAmazonListingCountPerMonth": 22,
+					"totalAmazonListingPricePerMonth": 9555.36,
+					"bestListerEmailAddressOfTheMonth": ""
+				}
+			],
+			"march": [
+				{
+					"totalEbayListingCountPerMonth": 18,
+					"totalEbayListingPricePerMonth": 5495.48,
+					"averageEbayListingPricePerMonth": 305.3,
+					"averageEbayListingCountPerMonth": 0,
+					"totalAmazonListingCountPerMonth": 16,
+					"totalAmazonListingPricePerMonth": 7625.69,
+					"bestListerEmailAddressOfTheMonth": ""
+				}
+			],
+			"april": [
+				{
+					"totalEbayListingCountPerMonth": 17,
+					"totalEbayListingPricePerMonth": 8446.44,
+					"averageEbayListingPricePerMonth": 496.85,
+					"averageEbayListingCountPerMonth": 0,
+					"totalAmazonListingCountPerMonth": 9260.58,
+					"totalAmazonListingPricePerMonth": 20,
+					"bestListerEmailAddressOfTheMonth": ""
+				}
+			],
+			"may": [
+				{
+					"totalEbayListingCountPerMonth": 16,
+					"totalEbayListingPricePerMonth": 6245.46,
+					"averageEbayListingPricePerMonth": 390.34,
+					"averageEbayListingCountPerMonth": 0,
+					"totalAmazonListingCountPerMonth": 15,
+					"totalAmazonListingPricePerMonth": 5037.43,
+					"bestListerEmailAddressOfTheMonth": ""
+				}
+			],
+			"june": [
+				{
+					"totalEbayListingCountPerMonth": 19,
+					"totalEbayListingPricePerMonth": 8853.51,
+					"averageEbayListingPricePerMonth": 465.97,
+					"averageEbayListingCountPerMonth": 0,
+					"totalAmazonListingCountPerMonth": 27,
+					"totalAmazonListingPricePerMonth": 10453.26,
+					"bestListerEmailAddressOfTheMonth": ""
+				}
+			],
+			"july": [
+				{
+					"totalEbayListingCountPerMonth": 16,
+					"totalEbayListingPricePerMonth": 5541.45,
+					"averageEbayListingPricePerMonth": 346.34,
+					"averageEbayListingCountPerMonth": 0,
+					"totalAmazonListingCountPerMonth": 14,
+					"totalAmazonListingPricePerMonth": 5557.73,
+					"bestListerEmailAddressOfTheMonth": ""
+				}
+			],
+			"august": [
+				{
+					"totalEbayListingCountPerMonth": 19,
+					"totalEbayListingPricePerMonth": 6978.32,
+					"averageEbayListingPricePerMonth": 367.28,
+					"averageEbayListingCountPerMonth": 0,
+					"totalAmazonListingCountPerMonth": 8,
+					"totalAmazonListingPricePerMonth": 4256.68,
+					"bestListerEmailAddressOfTheMonth": ""
+				}
+			],
+			"september": [
+				{
+					"totalEbayListingCountPerMonth": 21,
+					"totalEbayListingPricePerMonth": 9157.44,
+					"averageEbayListingPricePerMonth": 436.07,
+					"averageEbayListingCountPerMonth": 0,
+					"totalAmazonListingCountPerMonth": 14,
+					"totalAmazonListingPricePerMonth": 7187.8,
+					"bestListerEmailAddressOfTheMonth": ""
+				}
+			],
+			"october": [
+				{
+					"totalEbayListingCountPerMonth": 14,
+					"totalEbayListingPricePerMonth": 7837.18,
+					"averageEbayListingPricePerMonth": 559.8,
+					"averageEbayListingCountPerMonth": 0,
+					"totalAmazonListingCountPerMonth": 18,
+					"totalAmazonListingPricePerMonth": 9220.15,
+					"bestListerEmailAddressOfTheMonth": ""
+				}
+			],
+			"november": [
+				{
+					"totalEbayListingCountPerMonth": 15,
+					"totalEbayListingPricePerMonth": 6094.14,
+					"averageEbayListingPricePerMonth": 406.28,
+					"averageEbayListingCountPerMonth": 0,
+					"totalAmazonListingCountPerMonth": 10,
+					"totalAmazonListingPricePerMonth": 4464.8,
+					"bestListerEmailAddressOfTheMonth": ""
+				}
+			],
+			"december": [
+				{
+					"totalEbayListingCountPerMonth": 19,
+					"totalEbayListingPricePerMonth": 9689.64,
+					"averageEbayListingPricePerMonth": 509.98,
+					"averageEbayListingCountPerMonth": 0,
+					"totalAmazonListingCountPerMonth": 11,
+					"totalAmazonListingPricePerMonth": 6888.44,
+					"bestListerEmailAddressOfTheMonth": ""
+				}
+			}
+		]
+	}
+}
