@@ -3,7 +3,6 @@ package com.wobhomework.project.Configuration;
 import com.wobhomework.project.Model.*;
 import com.wobhomework.project.Repository.*;
 import com.wobhomework.project.Util.ConvertDataIntoCSVFile;
-import com.wobhomework.project.Util.ConvertDataIntoJsonFile;
 import com.wobhomework.project.Util.ServiceUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.ApplicationArguments;
@@ -28,7 +27,6 @@ public class DataLoader implements ApplicationRunner {
     private final MarketplaceRepository marketplaceRepository;
     private final LocationRepository locationRepository;
     private final ConvertDataIntoCSVFile convertDataIntoCSVFile;
-    private final ConvertDataIntoJsonFile convertDataIntoJsonFile;
 
     public void run(ApplicationArguments args) throws IOException {
         if (listingRepository.findAll().isEmpty() && listingStatusRepository.findAll().isEmpty() &&
@@ -39,7 +37,6 @@ public class DataLoader implements ApplicationRunner {
             dataInitialize(listingRepository,listingUri, new Listing[]{});
         }
         convertDataIntoCSVFile.convertGivenDataToCSVForListing();
-        convertDataIntoJsonFile.saveFileToDirectory();
     }
 
     private void dataInitialize(JpaRepository jpaRepository, String uri, Object[] object) {
