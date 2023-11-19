@@ -106,9 +106,9 @@ public class ConvertDataIntoCSVFile {
                 importLogBodyList.add("listing_status");
             }
         } else {
-            importLogBodyList.add("");
-            importLogBodyList.add("");
-            importLogBodyList.add("");
+            for (int i = 0; i < 3; i++) {
+                importLogBodyList.add("");
+            }
         }
     }
 
